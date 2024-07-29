@@ -6,6 +6,7 @@ const Button = ({label,iconURL}) => {
      bg-coral-red px-7 p mx-7
       rounded-full leading-none
       border-coral-red
+      ml-14
       ">
       {label}
       <img
