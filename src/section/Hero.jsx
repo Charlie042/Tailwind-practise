@@ -39,14 +39,15 @@ const Hero = () => {
           ))}
         </div>
       </div>
-     <div className="flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 relative bg-primary  bg-hero bg-center">
-          <img src={bigShoe1} 
+      <div className="flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 relative bg-primary  bg-hero bg-center">
+        <img
+          src={bigShoe1}
           alt="big shoes"
           width={610}
-          height={500} 
+          height={500}
           className="object-contain relative z-10 "
-          />
-     </div>
+        />
+      </div>
     </section>
   );
 };
