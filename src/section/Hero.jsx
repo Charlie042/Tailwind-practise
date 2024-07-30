@@ -46,6 +46,7 @@ const Hero = () => {
           width={610}
           height={500}
           className="object-contain relative z-10 "
+          // I want the picture to be switching on it own instead of if you pick it changes
         />
       </div>
     </section>
