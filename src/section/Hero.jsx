@@ -1,8 +1,11 @@
 import Button from "../Component/Button";
 import { arrowRight } from "../assets/icons";
-import { statistics } from "../Constant";
+import { shoes, statistics } from "../Constant";
 import { bigShoe1 } from "../assets/images";
+import { useState } from "react";
+import ShoeCards from "../Component/ShoeCards";
 const Hero = () => {
+const [bigShoeImg,setBigShoeImg] = useState(bigShoe1)
   return (
     <section
       id="Home"
@@ -41,13 +44,25 @@ const Hero = () => {
       </div>
       <div className="flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 relative bg-primary  bg-hero bg-center">
         <img
-          src={bigShoe1}
+          src={bigShoeImg}
           alt="big shoes"
           width={610}
           height={500}
           className="object-contain relative z-10 "
           // I want the picture to be switching on it own instead of if you pick it changes
         />
+      </div>
+      <div className="flex sm:gap-6 gap-4 sm:left-[10%] max-sm:px-6 absolute bottom-[60%]">
+        {shoes.map((image,index)=>(
+          <div key={index}>
+            <ShoeCards
+            index={index}
+            imageURL={image}
+            changeShoe ={(shoe)=> setBigShoeImg(shoe)}
+            bigShoeImg={bigShoeImg}
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
