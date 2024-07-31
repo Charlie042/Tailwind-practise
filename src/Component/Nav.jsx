@@ -1,6 +1,6 @@
-import { navLinks } from '../Constant';
-import {headerLogo} from '../assets/images'
-import {hamburger} from '../assets/icons'
+import { navLinks } from "../Constant";
+import { headerLogo } from "../assets/images";
+import { hamburger } from "../assets/icons";
 const Nav = () => {
   return (
     <header className="padding-x py-8  absolute z-10 w-full">
@@ -27,24 +27,21 @@ const Nav = () => {
               <a
                 href={item.href}
                 className="font-montserrat
-              leading-normal text-lg text-slate-grey"
+              leading-normal text-lg text-slate-grey
+              hover:bg-coral-red py-3 px-4 rounded-full hover:text-white "
               >
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
-        <div className='hidden max-lg:block'> 
+        <div className="hidden max-lg:block">
           {/* add a logic for this later to diplay the navbar when i click on this */}
-          <img
-           src={hamburger} 
-           alt="humbuger"
-           width={25}
-           height={25} />
+          <img src={hamburger} alt="humbuger" width={25} height={25} />
         </div>
       </nav>
     </header>
   );
-}
+};
 
-export default Nav
+export default Nav;

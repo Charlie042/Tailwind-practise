@@ -1,8 +1,7 @@
 const ShoeCards = ({ imageURL, changeShoe, bigShoeImg }) => {
-  
-  function handleClick (){
-    if(bigShoeImg !== imageURL){
-      changeShoe(imageURL.bigShoe)
+  function handleClick() {
+    if (bigShoeImg !== imageURL) {
+      changeShoe(imageURL.bigShoe);
     }
   }
   return (
@@ -13,12 +12,16 @@ const ShoeCards = ({ imageURL, changeShoe, bigShoeImg }) => {
    } ' cursor-pointer max-sm:flex-1`}
       onClick={handleClick}
     >
-      <div className="flex justify-center items-center px-3 py-5 bg-card rounded-lg bg-center">
+      <div
+        className="flex justify-center 
+      items-center bg-card rounded-lg 
+      bg-center sm:h-30 sm:w-40 max-sm:p-4"
+      >
         <img
-          src={imageURL.bigShoe}
+          src={imageURL.thumbnail}
           alt="Shoe collection"
-          width={105}
-          height={150}
+          width={127}
+          height={103.34}
           className="object-fit"
         />
       </div>
