@@ -6,15 +6,16 @@ const Button = ({label,iconURL}) => {
      bg-coral-red px-7 p mx-7
       rounded-full leading-none
       border-coral-red
-      ml-14
       ">
       {label}
+      {iconURL &&
       <img
         src={iconURL}
         alt="arrow right icon"
         className="rounded-full
          w-5 h-5 cursor-pointer "
       />
+}
     </button>
   );
 }
