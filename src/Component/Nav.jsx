@@ -27,7 +27,7 @@ const Nav = () => {
               <a
                 href={item.href}
                 className="font-montserrat
-              leading-normal text-lg text-slate-grey
+              leading-normal text-lg text-slate-grey cursor-pointer
               hover:bg-coral-red py-3 px-4 rounded-full hover:text-white "
               >
                 {item.label}
