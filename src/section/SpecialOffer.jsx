@@ -4,8 +4,8 @@ import Button from "../Component/Button";
 
 const SpecialOffer = () => {
   return (
-    <section className="flex justify-wrap items-center max-lg:flex-col-reverse">
-      <div>
+    <section className="flex justify-between items-center max-lg:flex-col-reverse gap-10 max-container">
+      <div className="flex-1">
         <img 
         src={offer} 
         alt="special Offer picture" 
@@ -19,7 +19,7 @@ const SpecialOffer = () => {
           <span className="text-coral-red">Special</span>{" "}
           offer
         </h1>
-        <p className="text-slate-gray leading-7 max-w-[27rem]">
+        <p className="text-slate-gray leading-7 max-w-[27rem] ">
           Embark on shopping journey that redefines your experience
           with unbeatable deals. From premier selection to incredible savings,
           we offer unparalleled that sets us apart.
@@ -30,7 +30,7 @@ const SpecialOffer = () => {
          nothing short of exceptional.
         </p>
 
-        <div className="mt-11 flex">
+        <div className="mt-11 flex flex-wrap gap-5">
           <Button label="View Details" iconURL={arrowRight} />
           <Button label="Learn more" 
            background='bg-white'
